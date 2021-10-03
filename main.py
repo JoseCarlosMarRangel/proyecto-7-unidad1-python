@@ -11,7 +11,7 @@ class calculo(QtWidgets.QWidget):
        
         QtWidgets.QWidget.__init__(self)
         self.setWindowTitle("Medic")
-        self.setGeometry(200, 200, 400, 400)
+        self.setGeometry(300, 300, 400, 400)
         self.c = QtWidgets.QLineEdit("Enfermedad")
        
         
@@ -83,7 +83,7 @@ class calculo(QtWidgets.QWidget):
         self.si.clicked.connect(self.activar1)
         self.si2.clicked.connect(self.activar3)
         self.si3.clicked.connect(self.activar4)
-        
+        self.no.clicked.connect(self.activar2)
         
 
        
@@ -97,7 +97,7 @@ class calculo(QtWidgets.QWidget):
 
     def activar2(self):
         self.si3.setEnabled(True)
-        self.no3.setEnables(True)
+        self.no3.setEnabled(True)
   
     def activar3(self):
         self.si4.setEnabled(True)
@@ -106,7 +106,7 @@ class calculo(QtWidgets.QWidget):
 
     def activar4(self):
         self.si5.setEnabled(True)
-        self.no5.setEmabled(True)
+        self.no5.setEnabled(True)
         
 
 calc = calculo()
