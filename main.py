@@ -41,6 +41,36 @@ class calculo(QtWidgets.QWidget):
 
         self.si5.setEnabled(False)
         self.no5.setEnabled(False)
+
+        self.si6 = QtWidgets.QPushButton("Si")
+        self.no6 = QtWidgets.QPushButton("No")
+
+        self.si6.setEnabled(False)
+        self.no6.setEnabled(False)
+        
+        self.si7 = QtWidgets.QPushButton("Si")
+        self.no7 = QtWidgets.QPushButton("No")
+
+        self.si7.setEnabled(False)
+        self.no7.setEnabled(False)
+        
+        self.si8 = QtWidgets.QPushButton("Si")
+        self.no8 = QtWidgets.QPushButton("No")
+
+        self.si8.setEnabled(False)
+        self.no8.setEnabled(False)
+        
+        self.si9 = QtWidgets.QPushButton("Si")
+        self.no9 = QtWidgets.QPushButton("No")
+
+        self.si9.setEnabled(False)
+        self.no9.setEnabled(False)
+        
+        self.si10 = QtWidgets.QPushButton("Si")
+        self.no10 = QtWidgets.QPushButton("No")
+
+        self.si10.setEnabled(False)
+        self.no10.setEnabled(False)
         
     
 
@@ -71,14 +101,33 @@ class calculo(QtWidgets.QWidget):
         grid.addWidget(self.si5,9,0)
         grid.addWidget(self.no5,9,1)
 
+        grid.addWidget(self.si6,11,0)
+        grid.addWidget(self.no6,11,1)
+
+        grid.addWidget(self.si7,13,0)
+        grid.addWidget(self.no7,13,1)
+
+        grid.addWidget(self.si8,15,0)
+        grid.addWidget(self.no8,15,1)
+
+        grid.addWidget(self.si9,17,0)
+        grid.addWidget(self.no9,17,1)
+
+        grid.addWidget(self.si10,19,0)
+        grid.addWidget(self.no10,19,1)
+
         grid.addWidget(QtWidgets.QLabel("Le duele la cabeza?"),0,0)
-        grid.addWidget(QtWidgets.QLabel("Tiene dolor de garganta?"),2,0)
-        grid.addWidget(QtWidgets.QLabel("Tiene dolor de pansa?"),4,0)
-        grid.addWidget(QtWidgets.QLabel("Tiene dolor de Cuerpo?"),6,0)
-        grid.addWidget(QtWidgets.QLabel("Tiene mareos?"),8,0)
-        
-        
-        grid.addWidget(QtWidgets.QLabel("Enfermedad"),10,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene dolor de espalda?"),2,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene ojos cansados regularmente?"),4,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene fiebre?"),6,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene dolor de garganta?"),8,0)
+        grid.addWidget(QtWidgets.QLabel("Se siente cansado regularmente?"),10,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene dolor de pansa?"),12,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene dolor de pecho?"),14,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene tos?"),16,0)
+        grid.addWidget(QtWidgets.QLabel("Tiene desmayos constantes?"),18,0)
+                
+        grid.addWidget(QtWidgets.QLabel("Enfermedad"),20,0)
 
         self.si.clicked.connect(self.activar1)
         self.si2.clicked.connect(self.activar3)
@@ -112,3 +161,4 @@ class calculo(QtWidgets.QWidget):
 calc = calculo()
 
 sys.exit(app.exec_())
+
