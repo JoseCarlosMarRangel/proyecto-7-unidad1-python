@@ -156,10 +156,32 @@ class calculo(QtWidgets.QWidget):
     def activar4(self):
         self.si5.setEnabled(True)
         self.no5.setEnabled(True)
+
+
+    def activar5(self):
+        self.si6.setEnabled(True)
+        self.no6.setEnabled(True)
+
+
+    def activar6(self):
+        self.si7.setEnabled(True)
+        self.no7.setEnabled(True)
+  
+    def activar7(self):
+        self.si8.setEnabled(True)
+        self.no8.setEnabled(True)
+
+
+    def activar8(self):
+        self.si9.setEnabled(True)
+        self.no9.setEnabled(True)
+
+    def activar9(self):
+        self.si10.setEnabled(True)
+        self.si10.setEnabled(True)
         
 
 calc = calculo()
 
 sys.exit(app.exec_())
-
 
